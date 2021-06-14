@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('images/background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            text-align: center;
+        }
+       
+        .rainbow-lr {
+        color: white;
+        }
+        #red{
+            background-color: red;
+            color: white;
+        }
+        #orange{
+            background-color: orange;
+            color: white;
+        }
+        #yellow{
+            background-color: yellow;
+            color: white;
+        }
+        #green{
+            background-color: green;
+            color: white;
+        }
+        #blue{
+            background-color: blue;
+            color: white;
+        }
+        #lilac{
+            background-color: blueviolet;
+            color: white;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <h1 class="rainbow-lr">
+            <span class="rainbow-lr">HAPPY PRIDE MONTH!!</span>
+        </h1>
+        <div class ="row">
+            <div class="col-sm-6">
+                <span class="rainbow-lr">Click on the dropdown button to know the meaning of each color represented in the LGBTQ flag!<br><br>
+                </span><div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#" id="red" onclick="display('red')">RED</a>
+                      <a class="dropdown-item" href="#" id="orange" onclick="display('orange')">ORANGE</a>
+                      <a class="dropdown-item" href="#" id="yellow" onclick="display('yellow')">YELLOW</a>
+                      <a class="dropdown-item" href="#" id="green" onclick="display('green')">GREEN</a>
+                      <a class="dropdown-item" href="#" id="blue" onclick="display('blue')">BLUE</a>
+                      <a class="dropdown-item" href="#" id="lilac" onclick="display('lilac')">LILAC</a>
+                    </div>
+                  </div>
+               
+            </div>
+            <div class ="col-sm-6 visible" id="gen">
+                <div id="gen1" class="card">
+                    <img class="card-img-top" src="images/lgbt.png" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">The rainbow flag (also known as the gay pride flag, LGBTQ pride flag, or simply the pride flag) is a symbol of lesbian, gay, bisexual, transgender, and queer (LGBTQ) pride and LGBTQ social movements. The colors reflect the diversity of the LGBTQ community, as the flag is often used as a symbol of gay pride during LGBTQ rights marches.</p>
+                    </div>
+                  </div>
+            </div>
+            
+              
+        </div>
+    </div>
+    <script>
+        function display(k)
+        {
+           var newElement = document.createElement('div');
+            if(k ==="red")
+            {
+                newElement.innerHTML ='<div><div class="card"><img class="card-img-top" src="images/red.jpg" alt="Card image cap"><div class="card-body"><p class="card-text">The red colour on the top stands for light and is the symbol of life.</p></div></div></div>';
+            }
+            else if(k==="orange")
+            {
+                newElement.innerHTML ='<div ><div class="card"><img class="card-img-top" src="images/orange.jpg" alt="Card image cap"><div class="card-body"><p class="card-text">The bright orange in the flag stands for healing. In the light of the recent incidents, our hearts do need healing from all the wounds that have been inflicted on the community.</p></div></div></div>';
+            }
+            else if(k==="yellow")
+            {
+                newElement.innerHTML =' <div ><div class="card"><img class="card-img-top" src="images/yellow.jpg" alt="Card image cap"><div class="card-body"><p class="card-text">The third strip on the flag symbolises the sun. It stands to show how the sun shines the same on everyone, without prejudice, without hate.</p></div></div></div>';
+            }
+            else if(k==="green")
+            {
+                newElement.innerHTML ='<div ><div class="card"><img class="card-img-top" src="images/green.jpg" alt="Card image cap"><div class="card-body"><p class="card-text">The green stands for serenity and nature. It shows how people\'s choice of sexuality is neither unnatural nor is it a disease that needs a miracle cure.</p></div></div></div>';
+            }
+            else if(k==="blue")
+            {
+                newElement.innerHTML ='<div ><div class="card"><img class="card-img-top" src="images/blue.jpg" alt="Card image cap"><div class="card-body"><p class="card-text">The blue stands for the celebration of arts because no matter what, the celebration of positivity is what brings joy to everyone. </p></div></div></div>';
+            }
+            else if(k==="lilac")
+            {
+                newElement.innerHTML ='<div><div class="card"><img class="card-img-top" src="images/lilac.jpg" alt="Card image cap"><div class="card-body"><p class="card-text">The last stripe of lilac represents spirit. The spirit of the people, the spirit of the movement, and how no matter what may come, this spirit will never be dulled. </p></div></div></div>';
+            }
+            var gen = document.getElementById('gen').childNodes;
+            gen[0].parentNode.replaceChild(newElement,gen[0]);
+            $('#gen1').remove();
+        }
+        
+    </script>
+</body>
+</html>
